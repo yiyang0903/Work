@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(255, 253, 251);
+}
+nav {
+  background: rgb(56, 56, 58);
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+}
+nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav ul li {
+  list-style-type: none;
+  padding-left: 15px;
+}
+nav ul li a {
+  color: white;
+}
+.searchbar {
+  /* padding-left: 150px; */
+}
+.center {
+}
