@@ -22,5 +22,58 @@ nav ul li a {
 .searchbar {
   /* padding-left: 150px; */
 }
-.center {
+.Breadcrumbs {
+  border: 2px solid red;
+  height: 50px;
+}
+.Breadcrumbs ul {
+  list-style-type: none;
+  padding-left: 150px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.Breadcrumbs ul li {
+  padding-left: 15px;
+}
+.Breadcrumbs ul li img {
+  width: 25px;
+}
+main {
+  border: blue 2px solid;
+}
+main .leftaside {
+  border: green 2px solid;
+  padding: 20px;
+}
+main .leftaside ul {
+  display: none;
+}
+main .leftaside h2 {
+  border-bottom: 3px solid #4c4b4b;
+}
+
+main .rightaside {
+  border: orange 2px solid;
+  padding: 20px;
+}
+main .rightaside h3 {
+  border-bottom: 3px solid #4c4b4b;
+}
+main .rightaside .productmain .card {
+}
+main .rightaside .productmain .card img {
+}
+.ptitleul {
+  text-align: center;
+}
+.ptitle ul {
+  list-style-type: none;
+  font-size: 18px;
+  padding-inline-start: 0px;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+}
+.ptitle ul li {
+  padding-top: 5px;
 }

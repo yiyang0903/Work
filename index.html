@@ -27,7 +27,65 @@
             </form>
         </nav>
     </header>
-    <div class=""></div>
+    <div class="Breadcrumbs d-flex align-items-center">
+        <ul class="d-flex">
+            <li><img src="pic/home.png">首頁    /</li>
+            <li>商品列表</li>
+        </ul>
+    </div>
+    <main class="d-flex justify-content-center">
+        <div class="leftaside">
+            <div class="productclass">
+                <h2>產品分類</h2>
+            </div>
+            <div class="ptitle">
+                <div class="ptitleul">
+                    <ul class="ptitleuliner">
+                        <li><a href="#">阿拉花瓜</a></li>
+                        <li><a href="#">垃圾</a></li>
+                        <li><a href="#">以揚</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rightaside">
+            <div class="productclass">
+                <h3>產品中心</h3>
+            </div>
+            <div class="productmain d-flex">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="pimg d-flex justify-content-center">
+                             <img src="pic/38043cbbf2aaea92c42768356142.png">
+                        </div>
+                      <h5 class="card-title">阿拉花瓜</h5>
+                      <h5 class="card-title">型號:p001</h5>
+                 
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="pimg d-flex justify-content-center">
+                             <img src="pic/38043cbbf2aaea92c42768356142.png">
+                        </div>
+                      <h5 class="card-title">阿拉花瓜</h5>
+                      <h5 class="card-title">型號:p002</h5>
+                 
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div class="pimg d-flex justify-content-center">
+                             <img src="pic/38043cbbf2aaea92c42768356142.png">
+                        </div>
+                      <h5 class="card-title">阿拉花瓜</h5>
+                      <h5 class="card-title">型號:p003</h5>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
 
     </footer>
@@ -35,7 +93,11 @@
 
 
 <script>
-
+$(".productclass").click(
+    function(){
+        $(".ptitleuliner").toggle();
+    }
+);
 </script>
 </body>
 </html>
