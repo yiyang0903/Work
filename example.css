@@ -7,14 +7,37 @@ nav {
   align-items: center;
   justify-content: space-around;
   font-size: 24px;
+  font-weight: 500;
+  /* position:relative; */
 }
 nav ul {
   margin-top: 0;
   margin-bottom: 0;
+  position: relative;
+  text-align: center;
 }
+nav ul ul {
+  position: absolute;
+  /* z-index: 99; */
+  background: black;
+  padding-inline-start: 0px;
+  top: 100%;
+}
+nav ul ul {
+  display: none;
+  text-align: center;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul ul li {
+  padding-left: 0px;
+}
+
 nav ul li {
   list-style-type: none;
   padding-left: 15px;
+  width: 150px;
 }
 nav ul li a {
   color: white;
@@ -23,8 +46,9 @@ nav ul li a {
   /* padding-left: 150px; */
 }
 .Breadcrumbs {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 50px;
+  margin-top: 10px;
 }
 .Breadcrumbs ul {
   list-style-type: none;
@@ -40,11 +64,12 @@ nav ul li a {
   width: 25px;
 }
 main {
-  border: blue 2px solid;
+  /* border: blue 2px solid; */
 }
 main .leftaside {
-  border: green 2px solid;
+  /* border: green 2px solid; */
   padding: 20px;
+  width: 30%;
 }
 main .leftaside ul {
   display: none;
@@ -54,13 +79,22 @@ main .leftaside h2 {
 }
 
 main .rightaside {
-  border: orange 2px solid;
+  /* border: orange 2px solid; */
   padding: 20px;
 }
 main .rightaside h3 {
   border-bottom: 3px solid #4c4b4b;
 }
+main .rightaside .productmain {
+  flex-wrap: wrap;
+  padding: 30px;
+}
 main .rightaside .productmain .card {
+  margin-top: 10px;
+}
+main .rightaside .productmain .card:hover {
+  box-shadow: 3px 3px 3px rgb(95, 95, 95);
+  transition: ease-in 0.3s;
 }
 main .rightaside .productmain .card img {
 }
