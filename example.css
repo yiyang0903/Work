@@ -2,7 +2,7 @@ body {
   background-color: rgb(255, 253, 251);
 }
 nav {
-  background: rgb(56, 56, 58);
+  background: rgb(59, 59, 65);
   height: 80px;
   align-items: center;
   justify-content: space-around;
@@ -90,7 +90,10 @@ main .rightaside .productmain {
   padding: 30px;
 }
 main .rightaside .productmain .card {
-  margin-top: 10px;
+  margin-top: 15px;
+  background: rgb(240, 239, 238);
+  border: none;
+  border-radius: 5px;
 }
 main .rightaside .productmain .card:hover {
   box-shadow: 3px 3px 3px rgb(95, 95, 95);
@@ -110,4 +113,12 @@ main .rightaside .productmain .card img {
 }
 .ptitle ul li {
   padding-top: 5px;
+}
+footer {
+  background-color: rgb(59, 59, 65);
+  height: 120px;
+}
+footer h3 {
+  color: white;
+  text-align: center;
 }
