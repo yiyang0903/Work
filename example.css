@@ -1,5 +1,6 @@
 * {
   list-style: none;
+  font-family: 微軟正黑體;
 }
 .container-fluid {
   width: 100%;
@@ -20,7 +21,14 @@ nav {
   top: 0;
   width: auto;
   z-index: 999;
-  width: 150px;
+  width: 250px;
+}
+.logo {
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 .togglebar {
   background-color: rgb(21, 99, 60);
@@ -29,7 +37,30 @@ nav {
 .togglebar.active {
   height: 100px;
 }
-
+.nav_detail {
+  background: rgb(21, 99, 60);
+  color: white;
+  font-size: 24px;
+  padding-top: 15px;
+  opacity: 0;
+}
+.nav_detail > ul > li > a {
+  color: #fff;
+}
+.nav_detail > ul > li > a:hover {
+  color: rgb(230, 255, 90);
+}
+.nav_detail.active {
+  opacity: 1;
+  padding-top: 0;
+}
+.nav_detail > ul {
+  flex-direction: column;
+  padding-inline-start: 0px;
+}
+.nav_detail > ul > li {
+  padding-top: 8px;
+}
 .togglebar.active i {
   position: absolute;
   top: 0;
@@ -38,6 +69,18 @@ nav {
   right: 0;
   margin: auto;
 }
+
+.togglebar > i {
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .togglebar.active i:nth-child(1) {
   transform: rotate(45deg);
 }
@@ -47,16 +90,7 @@ nav {
 .togglebar.active i:nth-child(2) {
   opacity: 0;
 }
-.togglebar > i {
-  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: #fff;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
+
 .togglebar > span {
   color: white;
   font-size: 18px;
@@ -75,10 +109,32 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.banner .ourproduct h1 {
+  font-size: 54px;
+}
 .banner .ourproduct {
-  width: 300px;
+  width: 400px;
   height: 150px;
-  background: rgb(21, 99, 60);
+  background: rgb(21, 99, 60, 0.7);
   text-align: center;
   color: white;
+  border-radius: 10px;
+}
+main {
+}
+main .hotsale {
+  padding: 55px;
+}
+.hotsale .hotsaleitem {
+  padding-top: 20px;
+  font-size: 24px;
+}
+.hotsaleinner {
+  width: 50%;
+  /* border: red solid 2px; */
+  padding-left: 150px;
+}
+.hotsale .hotpic {
+  width: 40%;
+  /* border: red solid 2px; */
 }
