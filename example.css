@@ -1,6 +1,16 @@
 * {
   list-style: none;
 }
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+.container-fluid .banner {
+  background-size: cover;
+  background-image: url("./pic/banner1.jpg");
+  min-height: 718px;
+  width: 100%;
+}
 nav {
   background-color: transparent;
   display: flex;
@@ -56,4 +66,19 @@ nav {
 }
 .togglebar.active > span {
   opacity: 0;
+}
+.container-fluid .banner {
+  background-size: cover;
+  background-image: url("./pic/banner1.jpg");
+  min-height: 718px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.banner .ourproduct {
+  width: 300px;
+  height: 150px;
+  background: rgb(21, 99, 60);
+  text-align: center;
+  color: white;
 }
