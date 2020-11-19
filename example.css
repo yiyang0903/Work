@@ -33,6 +33,7 @@ nav {
 .togglebar {
   background-color: rgb(21, 99, 60);
   position: relative;
+  padding: 20px;
 }
 .togglebar.active {
   height: 100px;
@@ -53,6 +54,7 @@ nav {
 .nav_detail.active {
   opacity: 1;
   padding-top: 0;
+  padding-bottom: 20px;
 }
 .nav_detail > ul {
   flex-direction: column;
@@ -106,8 +108,6 @@ nav {
   background-image: url("./pic/banner1.jpg");
   min-height: 718px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 .banner .ourproduct h1 {
   font-size: 54px;
@@ -120,11 +120,11 @@ nav {
   color: white;
   border-radius: 10px;
 }
-main {
-}
+
 main .hotsale {
   padding: 55px;
 }
+
 .hotsale .hotsaleitem {
   padding-top: 20px;
   font-size: 24px;
@@ -137,4 +137,31 @@ main .hotsale {
 .hotsale .hotpic {
   width: 40%;
   /* border: red solid 2px; */
+}
+.contactus {
+  /* border: red solid 2px; */
+  padding: 50px 150px;
+}
+.contactus .con1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgb(18, 82, 50);
+  padding: 30px;
+}
+
+.contactus .con1 > img {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  padding: 50px;
+  background: rgb(21, 99, 60);
+  color: white;
+}
+footer h3 {
+  text-align: center;
+}
+footer h2 {
+  text-align: center;
 }
